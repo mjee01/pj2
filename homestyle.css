@@ -30,13 +30,14 @@ a{
 }
 footer{
     padding: 20px;
-    background-color: rgb(225, 207, 207);
+    background-color: rgb(244,244,244);
+    border: #C0C6C9 solid 2px;
 }
 
 /* dividing page into 2 */
 .grid1{
    
-  
+    
     min-height:100vh;
     display: grid;
     grid-template-columns: 75% 25%;
@@ -47,7 +48,7 @@ footer{
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 40px 85px;
-    background-color:antiquewhite;
+    background-color:#F7FCFE;
     display:flex;
     flex-direction: column;
     gap:10px;
@@ -62,7 +63,7 @@ footer{
     overflow-y: auto;
     height: 80vh;
    
-    background-color:rgb(230, 214, 193);
+    background-color:rgb(224, 223, 223);
 
     display:flex;
     flex-direction: column;
@@ -70,7 +71,7 @@ footer{
 }
 /* part 1 text */
 #part1{
-    background-color:rgb(212, 216, 216);
+    background-color:#BED3CA;
     display:flex;
     flex-direction: column;
     gap: 20px;
@@ -78,14 +79,14 @@ footer{
 /* part 2 text */
 #part2{
     padding-top:500px;
-    background-color:rgb(146, 148, 148);
+    background-color:#b8cbc3;
     display:flex;
     flex-direction: column;
     gap: 20px;
 }
 #part3{
     padding-top:500px;
-    background-color:rgb(212, 216, 216);
+    background-color:#b0c1ba;
     display:flex;
     flex-direction: column;
     gap: 20px;
@@ -94,7 +95,7 @@ footer{
 .textbox{
     padding: 30px;
     border: white solid 2px;
-    background-color:grey;
+    background-color:#474A4D;
     color: white;
 
 }
@@ -105,16 +106,16 @@ footer{
     grid-column-start: 2;
     grid-column-end: 3;
      padding: 20px;
-    background-color: grey;
-    border-left: black solid 4px;
-
+    background-color: #474A4D;
+    border-left: white solid 4px;
+ 
     display:grid;
     grid-template-rows: 16% 42% 42%;
 
 }
 /* right-content divisions */
 .cont1{
-    border-bottom: black solid 2px;;
+    border-bottom: rgb(255, 255, 255) solid 2px;
     grid-row-start: 1;
     grid-row-end: 2;
     padding: 15px;
@@ -124,8 +125,8 @@ footer{
 /* open-down menu */
 .days{
     padding:15px;
-    background-color: bisque;
-    border: red solid 2px;;
+    background-color: #F7FCFE;
+    border: #BED3CA solid 2px;
     display:flex;
     align-content: center;
     justify-content: center;
@@ -140,7 +141,7 @@ footer{
 /* div containing inventory */
 .inventory{
     padding:15px;
-    background-color: rgb(225, 207, 207);
+    background-color: #F7FCFE;
      display:flex;
     align-content: center;
     justify-content: center;
@@ -156,7 +157,7 @@ footer{
 /* div containing bottom content */
 .bottomcont{
     padding:15px;
-    background-color: rgb(225, 207, 207);
+    background-color: #F7FCFE;
      display:flex;
     align-content: center;
     justify-content: center;
