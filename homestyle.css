@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+   
+}
+@font-face {
+    font-family: 'rodin';
+    src: url(FOT-Rodin\ Pro\ M.otf);
+}
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height:100%;
+     box-sizing: border-box;
+     font-family:'rodin';
+     font-size: 12px;
+}
+p{
+    line-height:1.5;
+    
+}
+a{
+    color:white;
+}
+footer{
+    padding: 20px;
+    background-color: rgb(225, 207, 207);
+}
+
+/* dividing page into 2 */
+.grid1{
+   
+  
+    min-height:100vh;
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+}
+/* largest left div containing all content */
+.left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 40px 85px;
+    background-color:antiquewhite;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: space-between;
+    
+
+}
+
+/* container within .left for scrolling */
+.scrollbox{
+    padding: 35px;
+    overflow-y: auto;
+    height: 80vh;
+   
+    background-color:rgb(230, 214, 193);
+
+    display:flex;
+    flex-direction: column;
+    gap: 70px;
+}
+/* part 1 text */
+#part1{
+    background-color:rgb(212, 216, 216);
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* part 2 text */
+#part2{
+    padding-top:500px;
+    background-color:rgb(146, 148, 148);
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#part3{
+    padding-top:500px;
+    background-color:rgb(212, 216, 216);
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* textbox is the dialogue box within the main scroll text */
+.textbox{
+    padding: 30px;
+    border: white solid 2px;
+    background-color:grey;
+    color: white;
+
+}
+
+
+/* largest right div containing all content */
+.right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+     padding: 20px;
+    background-color: grey;
+    border-left: black solid 4px;
+
+    display:grid;
+    grid-template-rows: 16% 42% 42%;
+
+}
+/* right-content divisions */
+.cont1{
+    border-bottom: black solid 2px;;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+    padding-left:25px;
+    padding-right:25px;
+}
+/* open-down menu */
+.days{
+    padding:15px;
+    background-color: bisque;
+    border: red solid 2px;;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.cont2{
+    padding:15px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: black solid 2px;;
+}
+/* div containing inventory */
+.inventory{
+    padding:15px;
+    background-color: rgb(225, 207, 207);
+     display:flex;
+    align-content: center;
+    justify-content: center;
+    height:100%;
+}
+.cont3{
+    padding:15px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-bottom: black solid 2px;;
+    contain:content;
+}
+/* div containing bottom content */
+.bottomcont{
+    padding:15px;
+    background-color: rgb(225, 207, 207);
+     display:flex;
+    align-content: center;
+    justify-content: center;
+    height:100%;
+    width:60%;
+    
+}
+
+
+
+
