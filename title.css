@@ -1,5 +1,77 @@
 body{
-    color:black;
-    font-size: 200px;
-    text-align: center;
+    background-color: rgb(184, 184, 184);
+    box-sizing: border-box;
+    height: 100vh;
 }
+
+.container{
+    position:relative;
+    overflow: hidden;
+    padding-top: 400px;
+
+    padding-left:100px;
+    padding-bottom:10px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container a{
+    position:relative;
+    z-index:2;
+}
+
+
+img.title {
+    
+
+    width: 600px;
+    height: auto;
+    animation: fadein 2s forwards;
+
+    transition: 
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
+
+   
+}
+
+
+
+
+
+@keyframes fadeside{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(100%);}
+}
+@keyframes fadein{
+    0%{opacity:0; transform: translateX(-50px); }
+    100%{opacity:1; transform: translateX(0px); }
+}
+.container::after{
+    z-index: 1;
+    pointer-events: none;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+
+    animation:
+        
+        fadeside 2s;
+    
+}
+
+.other{
+    padding:70px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:100px;
+}
+
