@@ -23,6 +23,7 @@ body{
     min-height:100%;
      box-sizing: border-box;
      font-family:serif;
+    
      
      
      font-size: 14.4px;
@@ -198,11 +199,9 @@ footer a:hover{
     grid-column-end: 3;
      padding: 10px;
     background-color: #585858;
-    
-    
  
     display:grid;
-    grid-template-rows: 10% 42% 48%;
+    grid-template-rows: 10% 30%48%;
 
 }
 
@@ -290,7 +289,8 @@ footer a:hover{
     box-sizing: border-box;
     padding:17px;
     font-size: 16px;
-    height:100%;
+    height:fit-content;
+    object-fit: contain;
     
 }
 .cont2 img{
@@ -306,7 +306,7 @@ footer a:hover{
     transform:scaleY(1.8);
 }
 .icons{
-
+    object-fit: contain;    
     padding:10px;
     
     display: flex;
