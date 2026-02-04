@@ -46,7 +46,7 @@
                             <p>Leon only bit his lip in response. They both knew he wouldn’t have been able to convincingly lie to the teacher about Noel’s true whereabouts. Plus, his empathetic tears had been convincing. </p>
                             <p>▼</p>
                         </div>
-                        <div class="spacer"></div>
+                        
                         
                     </div>
 
@@ -61,7 +61,7 @@
                             <p>Sometimes, Noel wondered if his friend would jump off a bridge for him.</p>
                             <p>▼</p>
                         </div>
-                        <div class="spacer"></div>
+                        
                         
                     </div>
 
@@ -120,7 +120,7 @@
                         <p style="text-align: start; margin-bottom:0; ">INVENTORY</p>
                         <img src="imgs/border.png">
                         <div class="icons"> 
-                            <img id="imgstick" src="imgs/stick.png"class="hidden">
+                            <img id="imgstick" src="imgs/stick.png"class="hidden" onclick="openmodal2('mymodal0', this);">
                             <img id="imgbandaid" src="imgs/bandaid.png" class="hidden">
                             <img id="imgbell"src="imgs/bell.png" class="hidden">
                             <img id="imgrice"src="imgs/rice.png" class="hidden">
@@ -218,6 +218,12 @@
                     }
                 }
                     
+                function openmodal2(modalId) {
+                    if (modalId === "mymodal") {
+                        document.getElementById("mymodal").style.display = "block";
+                       
+                    }
+                }
                    
                
 
