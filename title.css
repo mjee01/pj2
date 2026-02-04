@@ -5,10 +5,16 @@
 }
 
 :root {
+    /*
      --light:rgb(218 214 203);
     --color2: rgb(154, 151, 137);
     --color3: rgb(108 102 86);
     --dark: rgb(58, 56, 49);
+    */
+    --light:rgb(247 239 211);
+    --color2: rgb(199, 187, 162);
+    --color3: rgb(109, 107, 90);
+    --dark: rgb(69, 70, 60);
 }
 body{
 

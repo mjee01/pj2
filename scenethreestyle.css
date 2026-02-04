@@ -40,10 +40,12 @@
     --dark: rgb(107 94 46);
     */
     
+    /*
     --light:rgb(218 214 203);
     --color2: rgb(154, 151, 137);
     --color3: rgb(108 102 86);
     --dark: rgb(58, 56, 49);
+    */
     
     /*
     --light:rgb(227 225 182);
@@ -64,9 +66,19 @@
     --color3: rgb(159 148 135);
     --dark: rgb(58 53 48);
     */
+    
+     --light:rgb(247 239 211);
+    --color2: rgb(199, 187, 162);
+    --color3: rgb(109, 107, 90);
+    --dark: rgb(69, 70, 60);
+    
+    /*
+     --light:rgb(219 223 214);
+    --color2: rgb(186, 201, 202);
+    --color3: rgb(144 155 157);
+    --dark: rgb(75 77 66);
 
-
-
+    */
 }
 
 html {
@@ -391,7 +403,7 @@ footer a:hover {
     box-sizing: border-box;
     padding: 17px;
     
-    font-size: 18px;
+    font-size: 19px;
     height: fit-content;
     object-fit: contain;
     box-sizing: border-box;
