@@ -4,11 +4,22 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Document</title> 
-        <link rel="stylesheet" href="homestyle.css">
+        <link rel="stylesheet" href="scenethreestyle.css">
+        <link rel="stylesheet" href="transitions.css">
 
         
     </head>
     <body>
+        
+        <div class ="transition transition1 is-active">
+            <div class="transtext">DAY 0</div>
+        </div>
+        <div class ="transition transition2">
+            <div class="transtext">DAY 1</div>
+        </div>
+
+
+        
         
         <div class="grid1">
             <div class="left">
@@ -17,29 +28,36 @@
                     <p>It was during recess when Noel first taught Leon about ghosts. In hushed whispers, Noel explained to a wide-eyed boy the details of trapping spirits in makeshift vessels. On a perch at the monkey bars, instructed him to search for suitable materials for the trap. Watched as his new friend obediently scoured the playground. Nodded thoughtfully every time Leon brought back a stick or piece of wood that was deemed suitable. Smiled as Leon checked on their constructed trap every recess, a hint of anticipation gracing his face. </p>
                     <p>Though no ghosts were trapped, Noel was unphased. “They might’ve followed you home,” he suggested. </p>
                     <p>Leon gaped at him.</p>
-                    <p>“Don’t worry, I know how to get rid of them,” Noel assured.</p>
-                    <p></p>
-                    <p>By the next year, they’d already forgotten their stint with ghost-hunting. It was the age of ugly dares and ding-dong ditching their apartment neighbors. Except Noel would sprint away first, leaving Leon’s petrified figure with an adult towering over him in the doorway. It wasn’t until the umpteenth door that Leon finally irritatedly confronted his friend, who was cackling in a bush in the distance. As a pittance, he was allowed to borrow Noel’s 3DS for a week. And he did so again, after the time that he was fooled into believing Noel’s beloved cat died. He hadn’t had a real pet cat at all. </p>
-                    <p>“I needed the excuse to be realistic,” Noel had justified, “Mrs. Yun wouldn’t have believed my absences otherwise.” </p>
                     
-                    <div id="one" class="dialogue" onclick="openDialogue('dialogueone', this); " style="display: block;opacity: 1;">
-                        <p>Leon only bit his lip in response. They both knew he wouldn’t have been able to convincingly lie to the teacher about Noel’s true whereabouts. Plus, his empathetic tears had been convincing. </p>
+                    
+                    <div id="one" class="dialogue" onclick="openDialogue('dialogueone', this); openmodal('mymodal', this);" style="display: block;opacity: 1;">
+                        <p>“Don’t worry, I know how to get rid of them,” Noel assured.</p>
                         <p>▼</p>
                         
                         
                     </div>
 
 
-                    
+                    <div id="section-one" class="section" >
+                                <div class="spacer"></div>
+                            <p>By the next year, they’d already forgotten their stint with ghost-hunting. It was the age of ugly dares and ding-dong ditching their apartment neighbors. Except Noel would sprint away first, leaving Leon’s petrified figure with an adult towering over him in the doorway. It wasn’t until the umpteenth door that Leon finally irritatedly confronted his friend, who was cackling in a bush in the distance. As a pittance, he was allowed to borrow Noel’s 3DS for a week. And he did so again, after the time that he was fooled into believing Noel’s beloved cat died. He hadn’t had a real pet cat at all. </p>
+                            <p>“I needed the excuse to be realistic,” Noel had justified, “Mrs. Yun wouldn’t have believed my absences otherwise.” </p>
+                            <div id="two" class="dialogue" onclick="openDialogue('dialoguetwo', this);">
+                            <p>Leon only bit his lip in response. They both knew he wouldn’t have been able to convincingly lie to the teacher about Noel’s true whereabouts. Plus, his empathetic tears had been convincing. </p>
+                            <p>▼</p>
+                        </div>
+                        <div class="spacer"></div>
+                        
+                    </div>
 
                   
                     
 
-                   <div id="section-one" class="section" >
+                   <div id="section-two" class="section" >
                                 <div class="spacer"></div>
                             <p>Despite it all, Noel walked through life with a flimsy motivation to be a nice person. This meant placid agreement towards adults, doing what others expected of him. He had no parents of his own to watch over him, perhaps resulting in his own desire to look after his friend. If anything, Leon was lucky that Noel was the one looking after him. He was the one to know of the naive heart brandished upon his sleeve. Bad people could’ve done worse to his friend.</p>
                             <p>It was just that Noel liked catching him off guard. He craved the rush of glee that came from seeing Leon’s earnest surprise and blood-flushed cheeks. his friend would jump off a bridge for him.</p>
-                        <div id="two" class="dialogue" onclick=" openmodal('mymodal', this);">
+                        <div id="three" class="dialogue" onclick="openDialogue('dialoguethree', this);">
                             <p>Sometimes, Noel wondered if his friend would jump off a bridge for him.</p>
                             <p>▼</p>
                         </div>
@@ -85,7 +103,7 @@
             </div>
             <div class="right">
                 <div class="cont1"> 
-                    <div class="days" style="letter-spacing:2px;"> <p>DAY  <b style="font-size: 22px;"> 0</b></p>
+                    <div class="days" style="letter-spacing:2px;"> <p style="font-size: 20px;">DAY  <b style="font-size: 24px;"> 0</b></p>
                         <div class="daydrop">
                              <a href="scenetwo.html">DAY <b>1</b></a>
                             <a href="scenethree.html">DAY <b>2</b></a>
@@ -96,10 +114,11 @@
                     </div>
                 </div>
                 <div class="cont2"> 
-                    <img src="imgs/border.png">
+                    
                     <div class="inventory">
                         
                         <p style="text-align: start; margin-bottom:0; ">INVENTORY</p>
+                        <img src="imgs/border.png">
                         <div class="icons"> 
                             <img id="imgstick" src="imgs/stick.png"class="hidden">
                             <img id="imgbandaid" src="imgs/bandaid.png" class="hidden">
@@ -111,7 +130,7 @@
                 <div class="cont3"> 
                     
                     <div class="bottomcont">
-                        <p>it's a clear day.</p>
+                        <p>IT'S A CLEAR DAY.</p>
                         <img src="imgs/clouds.png">
                     </div>
                 </div>
@@ -121,6 +140,16 @@
         
              <script>
 
+                window.onload=()=>{
+                    const transition_el=document.querySelector('.transition1');
+                    setTimeout(()=>{
+                        transition_el.classList.remove('is-active');
+                    },
+                    1000);
+                }
+                    
+                const transition_el2=document.querySelector('.transition2');
+                
         /* Add a new else if statement for every section+dialogue. */
 
         function openDialogue(dialogue, dialoguebox) {
@@ -133,10 +162,20 @@
                 }, 4000);
             } else if (dialogue === "dialoguetwo") {
                 document.getElementById("section-two").style.display = "flex";
-
+                
                 setTimeout(function () {
                     document.getElementById("three").classList.add("show");
                 }, 4000);
+            }
+            else if (dialogue === "dialoguethree") {
+                transition_el2.classList.add('is-active');
+               
+
+                    setTimeout(()=>{
+                        window.location.href = "scenetwo.html"; 
+                    },
+                    1000);
+                
             }
             else {
                 console.log("done");
@@ -188,10 +227,12 @@
                         if (event.target === modal) {
                             modal.style.display = "none";
                             
-                            window.location.href = "scenetwo.html"; 
+                            
                         }
                     });
                 };
+
+                
 
    
     

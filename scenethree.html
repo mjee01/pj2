@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>DAY2</title> 
         <link rel="stylesheet" href="scenethreestyle.css">
-
+        <link rel="stylesheet" href="transitions.css">
         
     </head>
     <body>
-        
+
+
+       <div class ="transition transition1 is-active">
+            <div class="transtext">DAY 2</div>
+        </div>
+
+            
+        </div>
         <div class="grid1">
             <div class="left">
                 <div class="scrollbox">
@@ -22,6 +29,7 @@
                         
                         
                     </div>
+                    <p> </p>
 
                     <div id="mymodal0" class="modal">
 
@@ -64,7 +72,7 @@
                         <p></p>
                         <p>a <b>stray grain of rice</b></p>
                         
-                        <p>a snack for later?</p>
+                        <p>lol a snack for later?</p>
                         <p> </p>
                         
                         <img src="imgs/rice.png">
@@ -112,11 +120,27 @@
                    
                     <div id="section-two" class="section">
                             <div class="spacer"></div>
+                            
                         <p>The sorted pile of possessions sat on the floor alongside some books and papers. Beady golden eyes peered out of a trash bag. Noel’s beloved cat plush. His one weakness was that he couldn’t sleep without it. The black fur was nearly worn off its limp body.</p>
                         
                         
-                        <div id="three" class="dialogue" >
-                            <p>cont</p>
+                        <div id="three" class="dialogue" onclick=" openDialogue('dialoguethree',this);" >
+                            <p>Noel caught his gaze, “Those aren’t needed now.”</p>
+                            <p>▼</p>
+                         </div>
+
+                         <div class="spacer"></div>
+                         
+                     </div>
+
+                    <div id="section-three" class="section">
+                            <div class="spacer"></div>
+                          
+                            <p>Leon raised his brow, not knowing what to make of the situation. The fever-dream-like memory of the day before. The healing indents on his palms served as the only physical proof of their conversation. At that moment, he’d been dragged underwater, and it was still as if there was water in his ears. Consequently, he’d been dazed, telling his parents he was going on a last-minute trip with Noel. The two of them were getting out of the city, and there was no reason for them to worry. As if that were possible, with parents like them. It was a relief that they hadn’t seen the slight tremor still lingering on his lips.</p>
+                            <p>Noel clicked his phone on to check the time. He hefted his travel bag over his shoulder, seemingly satisfied with leaving his loose ends as they were. Leon took the hand Noel offered, heaving his languid body off the couch.</p>
+                        <div id="four" class="dialogue" onclick=" openDialogue('dialoguefour',this);" >
+                            <p>There were no other words as the door locked behind them for the last time. </p>
+                            
                             <p>▼</p>
                          </div>
 
@@ -164,7 +188,7 @@
             </div>
             <div class="right">
                 <div class="cont1"> 
-                    <div class="days" style="letter-spacing:2px;"> <p>DAY  <b style="font-size: 22px;"> 2</b></p>
+                    <div class="days" style="letter-spacing:2px;"> <p style="font-size: 20px;">DAY  <b style="font-size: 24px;"> 2</b></p>
                         <div class="daydrop">
                              <a href="home.html">DAY <b>0</b></a>
                             <a href="scenetwo.html">DAY <b>1</b></a>
@@ -175,10 +199,11 @@
                     </div>
                 </div>
                 <div class="cont2"> 
-                    <img src="imgs/border.png">
+                    
                     <div class="inventory">
                         
                         <p style="text-align: start; margin-bottom:0; ">INVENTORY</p>
+                        <img src="imgs/border.png">
                         <div class="icons"> 
                             <img id="imgstick" src="imgs/stick.png"class="show" onclick="openmodal2('mymodal0', this);">
                             <img id="imgbandaid" src="imgs/bandaid.png" class="show" onclick="openmodal2('mymodal', this);">
@@ -191,7 +216,7 @@
                 <div class="cont3"> 
                     
                     <div class="bottomcont">
-                        <p>it's a clear day.</p>
+                        <p>ITS A CLEAR DAY.</p>
                         <img src="imgs/clouds.png">
                     </div>
                 </div>
@@ -200,6 +225,16 @@
         </div>
         
              <script>
+
+                window.onload=()=>{
+                    const transition_el=document.querySelector('.transition1');
+                    setTimeout(()=>{
+                        transition_el.classList.remove('is-active');
+                    },
+                    1000);
+                }
+                    
+                const transition_el2=document.querySelector('.transition2');
 
         /* Add a new else if statement for every section+dialogue. */
 

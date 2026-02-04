@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Document</title> 
         <link rel="stylesheet" href="title.css">
+        <link rel="stylesheet" href="transitions.css">
     </head>
     <body>
+
+        <div class ="transition transition1">
+            <div class="transtext">DAY 0</div>
+        </div>
         <div class="container">
             <a href="home.html">
                 <img src="imgs/nevertheless.png" class="title">
@@ -20,13 +25,30 @@
         </div>
 
         <div class="other">
-            <a href="home.html" class="butt">DAY 0</a>
-            <a href="" class="butt">ABOUT</a>
+            <a id="day" href="home.html" class="butt">DAY 0</a>
+            <a href="about.html" class="butt">ABOUT</a>
         </div>
 
        
         
         
+        <script>
+            const transition_el = document.querySelector('.transition1');
+            const anchor = document.querySelector('#day');
 
+            anchor.addEventListener('click', e => {
+            e.preventDefault();
+            const target = anchor.href;
+
+            transition_el.classList.add('is-active');
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 1000);
+            });
+            
+
+        </script>
     </body>
+    
 </html>

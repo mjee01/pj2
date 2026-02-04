@@ -4,12 +4,19 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>DAY1</title> 
-        <link rel="stylesheet" href="scenetwostyle.css">
-
+        <link rel="stylesheet" href="scenethreestyle.css">
+        <link rel="stylesheet" href="transitions.css">
         
     </head>
     <body>
         
+        <div class ="transition transition1 is-active">
+            <div class="transtext">DAY 1</div>
+        </div>
+        <div class ="transition transition2">
+            <div class="transtext">DAY 2</div>
+        </div>
+
         <div class="grid1">
             <div class="left">
                 <div class="scrollbox">
@@ -42,22 +49,7 @@
 
                     </div>
 
-                    <div id="mymodal0" class="modal">
-
-                        <div class="modalcontent"> 
-                        
-                        <p>item!</p>
-                        <p></p>
-                        <p>a <b>magic wand</b></p>
-                        
-                        <p>what's brown and sticky?</p>
-                        <p> </p>
-                        
-                        <img src="imgs/stick.png">
-
-                         </div>
-
-                    </div>
+                    
                     
 
                    <div id="section-one" class="section" >
@@ -159,7 +151,7 @@
             </div>
             <div class="right">
                 <div class="cont1"> 
-                    <div class="days" style="letter-spacing:2px;"> <p>DAY  <b style="font-size: 22px;"> 1</b></p>
+                    <div class="days" style="letter-spacing:2px;"> <p style="font-size: 20px;">DAY  <b style="font-size: 24px;"> 1</b></p>
                         <div class="daydrop">
                              <a href="home.html">DAY <b>0</b></a>
                             <a href="scenethree.html">DAY <b>2</b></a>
@@ -170,10 +162,11 @@
                     </div>
                 </div>
                 <div class="cont2"> 
-                    <img src="imgs/border.png">
+                    
                     <div class="inventory">
                         
                         <p style="text-align: start; margin-bottom:0; ">INVENTORY</p>
+                        <img src="imgs/border.png">
                         <div class="icons"> 
                             <img id="imgstick" src="imgs/stick.png"class="show" onclick="openmodal2('mymodal0', this);">
                             <img id="imgbandaid" src="imgs/bandaid.png" class="hidden" onclick="openmodal2('mymodal', this);">
@@ -185,8 +178,8 @@
                 <div class="cont3"> 
                     
                     <div class="bottomcont">
-                        <p>it's a clear day.</p>
-                        <img src="imgs/clouds.png">
+                        <p>IT'S ESPECIALLY SUNNY.</p>
+                        <img src="imgs/sunny.png">
                     </div>
                 </div>
                 
@@ -194,6 +187,16 @@
         </div>
         
              <script>
+
+                window.onload=()=>{
+                    const transition_el=document.querySelector('.transition1');
+                    setTimeout(()=>{
+                        transition_el.classList.remove('is-active');
+                    },
+                    1000);
+                }
+                    
+                const transition_el2=document.querySelector('.transition2');
 
         /* Add a new else if statement for every section+dialogue. */
 
@@ -230,7 +233,15 @@
             }
 
             else if (dialogue === "dialoguefive") {
-                window.location.href = "scenethree.html"; 
+                transition_el2.classList.add('is-active');
+               
+
+                    setTimeout(()=>{
+                        window.location.href = "scenethree.html"; 
+                    },
+                    1000);
+
+                
             }
             else {
                 console.log("done");
